@@ -6,23 +6,15 @@
 
         <title>Laravel</title>
 
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{{ asset('assets/images/apc-logo.png') }}">
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
-        <!-- Styles -->
-        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            sans: ['Figtree', 'sans-serif'],
-                        }
-                    }
-                }
-            }
-        </script>
+        <!-- Styles & Styling -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body class="antialiased font-sans">
         <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">

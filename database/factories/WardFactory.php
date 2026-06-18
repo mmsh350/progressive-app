@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\Ward;
 use App\Models\Lga;
+use App\Models\Ward;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class WardFactory extends Factory
@@ -14,7 +14,7 @@ class WardFactory extends Factory
     {
         return [
             'lga_id' => Lga::factory(),
-            'name' => 'Ward ' . $this->faker->word(),
+            'name' => 'Ward '.$this->faker->word().' '.$this->faker->unique()->numerify('#####'),
         ];
     }
 }
